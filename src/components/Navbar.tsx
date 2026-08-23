@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, Mail, MapPin, Menu, X, ArrowRight, ShieldCheck, Sun, Zap, Bike, Calculator, FileText, ChevronRight } from 'lucide-react';
+import logoImg from '../assets/LOGO.png';
 
 interface NavbarProps {
   onOpenContact: (defaultTab?: string) => void;
@@ -74,11 +75,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onOpenCalculator 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo */}
           <a href="#hero" className="flex items-center space-x-3 group">
-            <div className="bg-slate-900/90 p-1.5 rounded-xl border border-slate-800 group-hover:border-emerald-500/50 transition-colors shadow-inner">
+            <div className="bg-white/95 hover:bg-white px-2.5 py-1 rounded-xl border border-slate-200 transition-all shadow-md">
               <img 
-                src="/LOGO.png" 
+                src={logoImg} 
                 alt="Trishul Innovations Logo" 
-                className="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                className="h-9 sm:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
             </div>
           </a>

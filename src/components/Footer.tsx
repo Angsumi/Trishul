@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Globe, ShieldCheck, QrCode, ArrowUp } from 'lucide-react';
+import logoImg from '../assets/LOGO.png';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -15,11 +16,11 @@ export const Footer: React.FC = () => {
           {/* Col 1: Brand Info */}
           <div className="lg:col-span-4 space-y-4 text-left">
             <a href="#hero" className="inline-block">
-              <div className="bg-slate-900 p-2 rounded-2xl border border-slate-800 inline-block">
+              <div className="bg-white/95 px-3 py-1.5 rounded-2xl border border-slate-200 inline-block shadow-md">
                 <img 
-                  src="/LOGO.png" 
+                  src={logoImg} 
                   alt="Trishul Innovations Logo" 
-                  className="h-12 w-auto object-contain"
+                  className="h-11 w-auto object-contain"
                 />
               </div>
             </a>

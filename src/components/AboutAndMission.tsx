@@ -1,5 +1,6 @@
 import React from 'react';
 import { Eye, Target, Sparkles, ShieldCheck, HeartHandshake, MapPin } from 'lucide-react';
+import logoImg from '../assets/LOGO.png';
 
 export const AboutAndMission: React.FC = () => {
   return (
@@ -13,9 +14,9 @@ export const AboutAndMission: React.FC = () => {
           <div className="lg:col-span-5 relative">
             <div className="p-8 rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl relative overflow-hidden text-center group space-y-6">
               
-              <div className="p-6 bg-slate-950 rounded-2xl border border-slate-800 max-w-xs mx-auto shadow-inner">
+              <div className="p-4 bg-white rounded-2xl border border-slate-200 max-w-xs mx-auto shadow-md">
                 <img 
-                  src="/LOGO.png" 
+                  src={logoImg} 
                   alt="Trishul Innovations Logo" 
                   className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
                 />
