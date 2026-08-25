@@ -1,37 +1,33 @@
 import React from 'react';
 import { ShieldCheck, TrendingDown, Home, PiggyBank, Leaf } from 'lucide-react';
+import { motion } from 'motion/react';
 
 export const ValueBadges: React.FC = () => {
   const badges = [
     {
       icon: ShieldCheck,
       title: 'Govt. Approved Scheme',
-      subtitle: 'MNRE & State Verified',
-      color: 'emerald',
+      subtitle: 'MNRE & Assam Verified',
     },
     {
       icon: TrendingDown,
       title: 'Up to 90% Bill Saving',
       subtitle: 'Free Electricity',
-      color: 'amber',
     },
     {
       icon: Home,
       title: 'Increase Property Value',
       subtitle: 'Modern Clean Upgrade',
-      color: 'sky',
     },
     {
       icon: PiggyBank,
       title: 'Long Term Savings',
       subtitle: '25+ Years Guarantee',
-      color: 'green',
     },
     {
       icon: Leaf,
       title: 'Clean & Green Environment',
       subtitle: 'Zero Carbon Footprint',
-      color: 'teal',
     },
   ];
 
@@ -42,18 +38,23 @@ export const ValueBadges: React.FC = () => {
           {badges.map((badge, idx) => {
             const Icon = badge.icon;
             return (
-              <div 
+              <motion.div 
                 key={idx}
-                className="flex items-center space-x-3 p-3.5 rounded-2xl bg-slate-950/60 border border-slate-800/80 hover:border-slate-700 transition-all hover:bg-slate-950 shadow-sm"
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.4, delay: idx * 0.08, ease: [0.16, 1, 0.3, 1] }}
+                whileHover={{ scale: 1.03, y: -2 }}
+                className="flex items-center space-x-3 p-3.5 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-blue-500/40 transition-all shadow-sm"
               >
-                <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-emerald-400 shrink-0">
-                  <Icon className="w-5 h-5 text-emerald-400" />
+                <div className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-amber-400 shrink-0">
+                  <Icon className="w-5 h-5" />
                 </div>
-                <div>
+                <div className="text-left">
                   <h4 className="text-xs sm:text-sm font-bold text-white leading-snug">{badge.title}</h4>
                   <p className="text-[11px] text-slate-400">{badge.subtitle}</p>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Eye, Target, Sparkles, ShieldCheck, HeartHandshake, MapPin } from 'lucide-react';
-import logoImg from '../assets/LOGO.png';
+import { motion } from 'motion/react';
+import logoImg from '../assets/LOGO.webp';
 
 export const AboutAndMission: React.FC = () => {
   return (
@@ -11,13 +12,21 @@ export const AboutAndMission: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Left Column: Brand Logo & Emblem Card */}
-          <div className="lg:col-span-5 relative">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            className="lg:col-span-5 relative"
+          >
             <div className="p-8 rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl relative overflow-hidden text-center group space-y-6">
               
               <div className="p-4 bg-white rounded-2xl border border-slate-200 max-w-xs mx-auto shadow-md">
                 <img 
                   src={logoImg} 
                   alt="Trishul Innovations Logo" 
+                  width="240"
+                  height="66"
                   className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
@@ -43,7 +52,7 @@ export const AboutAndMission: React.FC = () => {
               </div>
 
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Column: About Us Narrative */}
           <div className="lg:col-span-7 space-y-6 text-left">

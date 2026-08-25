@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, Mail, MapPin, Menu, X, ArrowRight, ShieldCheck, Sun, Zap, Bike, Calculator, FileText, ChevronRight } from 'lucide-react';
-import logoImg from '../assets/LOGO.png';
+import { motion } from 'motion/react';
+import logoImg from '../assets/LOGO.webp';
 
 interface NavbarProps {
   onOpenContact: (defaultTab?: string) => void;
@@ -33,7 +34,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onOpenCalculator 
     { name: 'Real Projects', href: '#gallery' },
     { name: 'Savings Calculator', href: '#calculator' },
     { name: 'Loans & Subsidy', href: '#loans-subsidy' },
-    { name: 'Assam Network', href: '#coverage' },
+    { name: 'Regional Network', href: '#coverage' },
     { name: 'Contact Us', href: '#contact' },
   ];
 
@@ -43,28 +44,28 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onOpenCalculator 
       <div className={`bg-slate-900/95 backdrop-blur-md text-slate-300 text-xs py-2 border-b border-slate-800/80 transition-all duration-300 ${isScrolled ? 'hidden md:block opacity-90' : 'block'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-between items-center gap-2">
           <div className="flex items-center space-x-6 flex-wrap">
-            <a href="tel:+919181430285" className="flex items-center space-x-1.5 hover:text-emerald-400 transition-colors">
-              <Phone className="w-3.5 h-3.5 text-emerald-500" />
+            <a href="tel:+919181430285" className="flex items-center space-x-1.5 hover:text-amber-400 transition-colors">
+              <Phone className="w-3.5 h-3.5 text-blue-400" />
               <span>+91 9181430285</span>
             </a>
-            <a href="tel:03617265223" className="hidden sm:flex items-center space-x-1.5 hover:text-emerald-400 transition-colors">
-              <Phone className="w-3.5 h-3.5 text-emerald-500" />
+            <a href="tel:03617265223" className="hidden sm:flex items-center space-x-1.5 hover:text-amber-400 transition-colors">
+              <Phone className="w-3.5 h-3.5 text-blue-400" />
               <span>0361-7265223</span>
             </a>
-            <a href="mailto:trishul.innovations@outlook.com" className="flex items-center space-x-1.5 hover:text-emerald-400 transition-colors">
-              <Mail className="w-3.5 h-3.5 text-emerald-500" />
+            <a href="mailto:trishul.innovations@outlook.com" className="flex items-center space-x-1.5 hover:text-amber-400 transition-colors">
+              <Mail className="w-3.5 h-3.5 text-blue-400" />
               <span>trishul.innovations@outlook.com</span>
             </a>
           </div>
 
           <div className="flex items-center space-x-4">
             <div className="hidden lg:flex items-center space-x-1 text-slate-400">
-              <MapPin className="w-3.5 h-3.5 text-emerald-500" />
-              <span>Guwahati, Assam • Serving Northeast India</span>
+              <MapPin className="w-3.5 h-3.5 text-amber-400" />
+              <span>Serving Across Assam & Northeast India</span>
             </div>
             <div className="h-3 w-px bg-slate-800 hidden lg:block"></div>
             <div className="flex items-center space-x-3 text-slate-400">
-              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-950/80 text-emerald-400 border border-emerald-800/50">
+              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-semibold bg-blue-950/80 text-blue-300 border border-blue-800/50">
                 MNRE Govt Approved
               </span>
             </div>
@@ -81,6 +82,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onOpenCalculator 
               <img 
                 src={logoImg} 
                 alt="Trishul Innovations Logo" 
+                width="160"
+                height="44"
                 className="h-9 sm:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
             </div>

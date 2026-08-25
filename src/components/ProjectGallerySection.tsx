@@ -9,49 +9,49 @@ export const ProjectGallerySection: React.FC = () => {
     {
       title: 'Our Electric Scooter',
       category: 'ev',
-      src: './gallery/Our electric Scooter.png',
-      caption: 'High-efficiency 2-Wheeler EV Scooter for daily urban & rural commute in Assam.',
+      src: './gallery/Our electric Scooter.webp',
+      caption: 'High-efficiency 2-Wheeler EV Scooter for daily urban & rural commute in Assam & Northeast.',
     },
     {
       title: 'Commercial Electric Vehicle',
       category: 'ev',
-      src: './gallery/Another elctric motor vehicle.png',
-      caption: 'Heavy-load 3-Wheeler Commercial EV Auto designed for commercial transit.',
+      src: './gallery/Another elctric motor vehicle.webp',
+      caption: 'Heavy-load 3-Wheeler Commercial EV Auto designed for regional commercial transit.',
     },
     {
       title: 'Installed Rooftop Solar System',
       category: 'solar',
-      src: './gallery/Installed rooftop.png',
-      caption: 'High-capacity PM Surya Ghar rooftop solar panel setup on residential premises in Guwahati.',
+      src: './gallery/Installed rooftop.webp',
+      caption: 'High-capacity PM Surya Ghar rooftop solar panel setup on residential premises in Assam.',
     },
     {
       title: 'Smart Meter & Electrical Installation',
       category: 'solar',
-      src: './gallery/Installed meter and other system on a wall.png',
+      src: './gallery/Installed meter and other system on a wall.webp',
       caption: 'Net metering & smart meter infrastructure installed by certified Class-II technicians.',
     },
     {
       title: 'Solar Rooftop Working Team',
       category: 'team',
-      src: './gallery/Our team at solar rooftop working site.png',
+      src: './gallery/Our team at solar rooftop working site.webp',
       caption: 'Trishul Innovations technical crew performing on-site rooftop solar deployment.',
     },
     {
       title: 'Customer Consultation & Advisory',
       category: 'team',
-      src: './gallery/Our Agent with an client.png',
-      caption: 'End-to-end solar consultation & subsidy guidance provided to local clients.',
+      src: './gallery/Our Agent with an client.webp',
+      caption: 'End-to-end solar consultation & subsidy guidance provided to clients in Northeast India.',
     },
     {
       title: 'Our Happy Clients',
       category: 'team',
-      src: './gallery/Our happy clients.png',
+      src: './gallery/Our happy clients.webp',
       caption: 'Satisfied homeowners & business owners enjoying zero electricity bill savings.',
     },
     {
       title: 'Solar Technician Training Session',
       category: 'team',
-      src: './gallery/Solar worker\'s training session.png',
+      src: './gallery/Solar worker\'s training session.webp',
       caption: 'Skill Development Mission & wireman training session conducted by Trishul team.',
     },
   ];
@@ -147,6 +147,8 @@ export const ProjectGallerySection: React.FC = () => {
                   src={photo.src}
                   alt={photo.title}
                   loading="lazy"
+                  width="400"
+                  height="224"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>

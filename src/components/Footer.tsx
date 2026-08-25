@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Globe, ShieldCheck, QrCode, ArrowUp } from 'lucide-react';
-import logoImg from '../assets/LOGO.png';
+import logoImg from '../assets/LOGO.webp';
 
 export const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -20,17 +20,19 @@ export const Footer: React.FC = () => {
                 <img 
                   src={logoImg} 
                   alt="Trishul Innovations Logo" 
+                  width="160"
+                  height="44"
                   className="h-11 w-auto object-contain"
                 />
               </div>
             </a>
             
             <p className="text-slate-300 text-xs leading-relaxed max-w-sm">
-              Trishul Innovations is a leading provider of solar energy and EV mobility solutions in Assam. We are committed to provide clean energy for a better tomorrow.
+              Trishul Innovations is a leading provider of solar energy, EV mobility, and authorized regional distribution solutions across Assam & Northeast India.
             </p>
 
-            <div className="pt-2 flex items-center space-x-2 text-emerald-400 font-bold text-xs">
-              <ShieldCheck className="w-4 h-4 text-emerald-500" />
+            <div className="pt-2 flex items-center space-x-2 text-amber-400 font-bold text-xs">
+              <ShieldCheck className="w-4 h-4 text-blue-400" />
               <span>MNRE & Assam Govt Approved Scheme Partner</span>
             </div>
           </div>
