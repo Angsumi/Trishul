@@ -86,7 +86,7 @@ export const ContactModalForm: React.FC<ContactModalFormProps> = ({
                 Get Free Consultation & Quote
               </h3>
               <p className="text-xs text-slate-400 mt-1">
-                Fill in your details below. Our team in Guwahati will contact you within 2 hours.
+                Fill in your details below. Our regional team will contact you within 2 hours.
               </p>
 
               {defaultKw && (
@@ -218,7 +218,7 @@ export const ContactModalForm: React.FC<ContactModalFormProps> = ({
               </div>
               <div className="flex justify-between">
                 <span className="text-slate-400">Status:</span>
-                <span className="text-emerald-400 font-bold">Assigned to Guwahati Technical Team</span>
+                <span className="text-blue-400 font-bold">Assigned to Regional Technical Team</span>
               </div>
             </div>
 

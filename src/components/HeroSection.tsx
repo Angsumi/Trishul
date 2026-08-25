@@ -109,7 +109,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenContact, onOpenC
             {/* Trust Footer Note */}
             <p className="text-xs text-slate-400 pt-1 flex items-center space-x-2">
               <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-              <span>Trishul Innovations — Authorized Solar & EV Solutions across Guwahati & Assam.</span>
+              <span>Trishul Innovations — Authorized Solar & EV Solutions across Assam & Northeast India.</span>
             </p>
 
           </motion.div>

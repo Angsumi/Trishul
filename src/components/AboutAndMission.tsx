@@ -35,8 +35,8 @@ export const AboutAndMission: React.FC = () => {
                 <h3 className="text-2xl font-black text-white tracking-tight">TRISHUL INNOVATIONS</h3>
                 <p className="text-sm font-semibold text-emerald-400">Powering a Brighter Future</p>
                 <div className="pt-2 flex justify-center items-center space-x-2 text-xs text-slate-400">
-                  <MapPin className="w-3.5 h-3.5 text-emerald-500" />
-                  <span>Guwahati, Assam • Northeast India</span>
+                  <MapPin className="w-3.5 h-3.5 text-amber-400" />
+                  <span>Assam & Northeast India</span>
                 </div>
               </div>
 
