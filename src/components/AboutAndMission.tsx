@@ -57,15 +57,15 @@ export const AboutAndMission: React.FC = () => {
             </h2>
 
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              Trishul Innovations is a trusted clean-energy and electric mobility solutions provider based in Assam. We are committed to making sustainable technology accessible, affordable, and reliable for homes, businesses, and communities across the region.
+              Trishul Innovations is a socio-commercial private organization based in Assam, operating for over 5 years. Registered under <strong className="text-amber-400">Class-II Electrical Licensing Board (Govt of Assam License #8083 up to 11,000V)</strong>, <strong className="text-emerald-400">MSME UDYAM</strong>, <strong className="text-sky-400">NITI Aayog</strong>, and <strong className="text-teal-400">AMTRON (Dept of Electronics, Govt of Assam)</strong>, we are committed to making clean energy and EV technology accessible across Northeast India.
             </p>
 
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              Our core solutions include <strong className="text-white">PM Surya Ghar Rooftop Solar</strong>, <strong className="text-white">Solar Energy Systems</strong>, <strong className="text-white">EV Bikes</strong>, and <strong className="text-white">EV Autos</strong>. We provide end-to-end support, from consultation and product selection to installation, financing assistance, documentation, and after-sales service.
+              Our core solutions include <strong className="text-white">PM Surya Ghar Rooftop Solar</strong>, <strong className="text-white">Solar Energy Systems</strong>, <strong className="text-white">EV Bikes & Autos</strong>, and <strong className="text-white">Authorized Regional EV Distribution</strong>. Alongside renewable energy, we actively conduct Skill Development Training (Electrical Wireman, Mechanical & Electronics) across multiple districts of Assam.
             </p>
 
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              Through PM Surya Ghar, we help residential customers reduce their electricity bills and generate clean energy from their own rooftops. Alongside solar solutions, our EV mobility solutions provide an economical, eco-friendly, and practical alternative for everyday transportation and commercial use.
+              Through PM Surya Ghar, we empower homeowners and businesses to generate clean electricity with up to ₹1,30,800 subsidy. In parallel, our 2W and 3W EV mobility distribution network provides an economical, eco-friendly transport alternative for everyday commuters and commercial operators.
             </p>
 
             <div className="p-4 rounded-2xl bg-slate-900 border border-emerald-500/30 text-xs text-slate-300 flex items-start space-x-3">

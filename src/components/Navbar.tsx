@@ -29,6 +29,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onOpenCalculator 
     { name: 'PM Surya Ghar', href: '#surya-ghar' },
     { name: 'Solar Solutions', href: '#solutions' },
     { name: 'EV Solutions', href: '#ev-solutions' },
+    { name: 'EV Dealership', href: '#dealership' },
+    { name: 'Real Projects', href: '#gallery' },
     { name: 'Savings Calculator', href: '#calculator' },
     { name: 'Loans & Subsidy', href: '#loans-subsidy' },
     { name: 'Assam Network', href: '#coverage' },
@@ -41,13 +43,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onOpenCalculator 
       <div className={`bg-slate-900/95 backdrop-blur-md text-slate-300 text-xs py-2 border-b border-slate-800/80 transition-all duration-300 ${isScrolled ? 'hidden md:block opacity-90' : 'block'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-between items-center gap-2">
           <div className="flex items-center space-x-6 flex-wrap">
-            <a href="tel:+917002492965" className="flex items-center space-x-1.5 hover:text-emerald-400 transition-colors">
+            <a href="tel:+919181430285" className="flex items-center space-x-1.5 hover:text-emerald-400 transition-colors">
               <Phone className="w-3.5 h-3.5 text-emerald-500" />
-              <span>+91 70024 92965</span>
+              <span>+91 9181430285</span>
             </a>
-            <a href="tel:+919864092965" className="hidden sm:flex items-center space-x-1.5 hover:text-emerald-400 transition-colors">
+            <a href="tel:03617265223" className="hidden sm:flex items-center space-x-1.5 hover:text-emerald-400 transition-colors">
               <Phone className="w-3.5 h-3.5 text-emerald-500" />
-              <span>+91 98640 92965</span>
+              <span>0361-7265223</span>
             </a>
             <a href="mailto:trishul.innovations@outlook.com" className="flex items-center space-x-1.5 hover:text-emerald-400 transition-colors">
               <Mail className="w-3.5 h-3.5 text-emerald-500" />
@@ -177,7 +179,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onOpenCalculator 
 
           <div className="pt-2 text-center text-xs text-slate-400">
             <p>Guwahati • Dhemaji • Lakhimpur • Dibrugarh • Tinsukia • Jorhat</p>
-            <p className="mt-1 text-slate-500">Call: +91 70024 92965 | +91 98640 92965</p>
+            <p className="mt-1 text-slate-500">Call: +91 9181430285 | 0361-7265223</p>
           </div>
         </div>
       )}

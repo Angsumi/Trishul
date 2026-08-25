@@ -43,6 +43,8 @@ export const Footer: React.FC = () => {
                 { name: 'Home', href: '#hero' },
                 { name: 'About Us', href: '#about' },
                 { name: 'PM Surya Ghar', href: '#surya-ghar' },
+                { name: 'EV Dealership', href: '#dealership' },
+                { name: 'Real Projects', href: '#gallery' },
                 { name: 'Solar Solutions', href: '#solutions' },
                 { name: 'EV Solutions', href: '#ev-solutions' },
                 { name: 'Loans & Subsidy', href: '#loans-subsidy' },
@@ -64,29 +66,28 @@ export const Footer: React.FC = () => {
             <div className="space-y-2.5">
               <div className="flex items-start space-x-2.5">
                 <MapPin className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
-                <span className="text-slate-300">Sorumria, Naamghar Path, Guwahati, Assam - 781006</span>
+                <span className="text-slate-300">House No. 2A, 2nd Floor, Hemprabha Enclave, Sarumataria, Guwahati - 781006, Assam</span>
               </div>
 
               <div className="flex items-center space-x-2.5">
                 <Phone className="w-4 h-4 text-emerald-500 shrink-0" />
                 <div className="flex flex-col text-slate-300">
-                  <a href="tel:+917002492965" className="hover:text-emerald-400">+91 70024 92965</a>
-                  <a href="tel:+919864092965" className="hover:text-emerald-400">+91 98640 92965</a>
+                  <a href="tel:+919181430285" className="hover:text-emerald-400">+91 9181430285 (WhatsApp)</a>
+                  <a href="tel:03617265223" className="hover:text-emerald-400">0361-7265223 / +91 887682069</a>
                 </div>
               </div>
 
               <div className="flex items-center space-x-2.5">
                 <Mail className="w-4 h-4 text-emerald-500 shrink-0" />
-                <div className="flex flex-col text-slate-300">
-                  <a href="mailto:trishul.innovations@outlook.com" className="hover:text-emerald-400">trishul.innovations@outlook.com</a>
-                  <a href="mailto:info@trishulinnovations.com" className="hover:text-emerald-400">info@trishulinnovations.com</a>
-                </div>
+                <a href="mailto:trishul.innovations@outlook.com" className="hover:text-emerald-400 text-slate-300">
+                  trishul.innovations@outlook.com
+                </a>
               </div>
 
               <div className="flex items-center space-x-2.5">
                 <Globe className="w-4 h-4 text-emerald-500 shrink-0" />
-                <a href="https://www.trishulinnovations.com" target="_blank" rel="noopener noreferrer" className="text-emerald-400 font-semibold hover:underline">
-                  www.trishulinnovations.com
+                <a href="https://www.trishul.innovations.in" target="_blank" rel="noopener noreferrer" className="text-emerald-400 font-semibold hover:underline">
+                  www.trishul.innovations.in
                 </a>
               </div>
             </div>

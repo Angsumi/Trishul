@@ -57,9 +57,9 @@ export const ContactModalForm: React.FC<ContactModalFormProps> = ({
 
   const handleWhatsAppSend = () => {
     const text = encodeURIComponent(
-      `Hello Trishul Innovations,\n\nI am interested in *${formData.solution}*.\nName: ${formData.name}\nPhone: ${formData.phone}\nCity: ${formData.city}\nMonthly Bill: ${formData.monthlyBill || 'N/A'}${defaultKw ? `\nCalculated kW: ${defaultKw}kW (Subsidy ~₹${defaultSubsidy})` : ''}`
+      `Hello Trishul Innovations,\n\nI am interested in *${formData.solution}*.\nName: ${formData.name}\nPhone: ${formData.phone}\nCity: ${formData.city}\nMonthly Bill/Requirement: ${formData.monthlyBill || 'N/A'}${defaultKw ? `\nCalculated kW: ${defaultKw}kW (Subsidy ~₹${defaultSubsidy})` : ''}`
     );
-    window.open(`https://wa.me/917002492965?text=${text}`, '_blank');
+    window.open(`https://wa.me/919181430285?text=${text}`, '_blank');
   };
 
   return (
@@ -154,6 +154,7 @@ export const ContactModalForm: React.FC<ContactModalFormProps> = ({
                     className="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 text-xs focus:outline-none focus:border-emerald-500"
                   >
                     <option value="PM Surya Ghar Rooftop Solar">PM Surya Ghar Rooftop Solar</option>
+                    <option value="EV Dealership & Channel Partner Program">EV Dealership & Channel Partner Program</option>
                     <option value="EV Bikes (2-Wheeler)">EV Bikes (2-Wheeler)</option>
                     <option value="EV Auto (Commercial 3-Wheeler)">EV Auto (3-Wheeler)</option>
                     <option value="Solar Energy Systems (Off-Grid/Hybrid)">Solar Energy Systems (Hybrid)</option>

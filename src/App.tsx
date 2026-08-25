@@ -5,6 +5,8 @@ import { ValueBadges } from './components/ValueBadges';
 import { SolarSavingsCalculator } from './components/SolarSavingsCalculator';
 import { EVSavingsCalculator } from './components/EVSavingsCalculator';
 import { SolutionsSection } from './components/SolutionsSection';
+import { DealershipSection } from './components/DealershipSection';
+import { ProjectGallerySection } from './components/ProjectGallerySection';
 import { SynergyBanner } from './components/SynergyBanner';
 import { ProcessSection } from './components/ProcessSection';
 import { FinanceAndDocsSection } from './components/FinanceAndDocsSection';
@@ -70,6 +72,12 @@ export function App() {
 
         {/* Solutions Section */}
         <SolutionsSection onSelectSolution={handleSelectSolution} />
+
+        {/* EV Regional Dealership & Channel Partner Section */}
+        <DealershipSection onApplyDealership={() => handleOpenContact('EV Dealership & Channel Partner Program')} />
+
+        {/* Real Field Projects & Government Credentials Gallery */}
+        <ProjectGallerySection />
 
         {/* PM Surya Ghar Solar Calculator */}
         <SolarSavingsCalculator onApplyForSystem={handleApplyForCalculatedSystem} />

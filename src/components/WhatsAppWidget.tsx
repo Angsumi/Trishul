@@ -5,8 +5,8 @@ export const WhatsAppWidget: React.FC = () => {
   const [showTooltip, setShowTooltip] = useState(true);
 
   const handleWhatsAppClick = () => {
-    const text = encodeURIComponent('Hello Trishul Innovations, I would like to inquire about PM Surya Ghar Rooftop Solar & EV solutions in Assam.');
-    window.open(`https://wa.me/917002492965?text=${text}`, '_blank');
+    const text = encodeURIComponent('Hello Trishul Innovations, I would like to inquire about PM Surya Ghar Solar, EV Dealership & EV solutions in Assam.');
+    window.open(`https://wa.me/919181430285?text=${text}`, '_blank');
   };
 
   return (
