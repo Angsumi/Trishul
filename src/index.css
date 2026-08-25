@@ -9,19 +9,38 @@
   }
 }
 
-/* Custom Utilities & Glassmorphic Effects */
+/* Custom Utilities & Logo-Matched Palette Gradients */
 .glass-panel {
-  background: rgba(15, 23, 42, 0.75);
+  background: rgba(15, 23, 42, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .glass-panel-light {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+/* Logo Matched Gradients: Gold + Royal Blue + Metallic Silver */
+.gradient-text-brand {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 40%, #3b82f6 80%, #1d4ed8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-blue {
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #1d4ed8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-gold {
+  background: linear-gradient(135deg, #fef08a 0%, #f59e0b 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .gradient-text-emerald {
@@ -36,12 +55,20 @@
   -webkit-text-fill-color: transparent;
 }
 
-.glow-emerald {
-  box-shadow: 0 0 30px -5px rgba(34, 197, 94, 0.3);
+.glow-brand {
+  box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.35), 0 0 35px -5px rgba(37, 99, 235, 0.25);
+}
+
+.glow-blue {
+  box-shadow: 0 0 30px -5px rgba(37, 99, 235, 0.35);
 }
 
 .glow-amber {
-  box-shadow: 0 0 30px -5px rgba(245, 158, 11, 0.3);
+  box-shadow: 0 0 30px -5px rgba(245, 158, 11, 0.35);
+}
+
+.glow-emerald {
+  box-shadow: 0 0 30px -5px rgba(34, 197, 94, 0.3);
 }
 
 /* Smooth custom scrollbars */
@@ -56,5 +83,5 @@
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #16a34a;
+  background: #3b82f6;
 }
