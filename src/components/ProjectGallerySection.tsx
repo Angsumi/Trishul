@@ -16,13 +16,13 @@ export const ProjectGallerySection: React.FC = () => {
       title: 'Commercial Electric Vehicle',
       category: 'ev',
       src: './gallery/Another elctric motor vehicle.webp',
-      caption: 'Heavy-load 3-Wheeler Commercial EV Auto designed for regional commercial transit.',
+      caption: '2-Wheeler designed for regional commercial transit.',
     },
     {
       title: 'Installed Rooftop Solar System',
       category: 'solar',
       src: './gallery/Installed rooftop.webp',
-      caption: 'High-capacity PM Surya Ghar rooftop solar panel setup on residential premises in Assam.',
+      caption: '3KW PM Surya Ghar rooftop solar panel setup on residential premises.',
     },
     {
       title: 'Smart Meter & Electrical Installation',
