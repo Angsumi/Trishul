@@ -54,6 +54,24 @@ export const ProjectGallerySection: React.FC = () => {
       src: './gallery/Solar worker\'s training session.webp',
       caption: 'Skill Development Mission & wireman training session conducted by Trishul team.',
     },
+    {
+      title: 'Commercial EV 3-Wheeler Auto',
+      category: 'ev',
+      src: './gallery/Electric 3-wheeler.webp',
+      caption: 'Heavy-duty 3-Wheeler Commercial EV Auto for urban and regional passenger & freight transit.',
+    },
+    {
+      title: 'Electric Power Tiller (Agri-EV)',
+      category: 'ev',
+      src: './gallery/Electric Power Tiller.webp',
+      caption: 'Eco-friendly electric power tiller designed for sustainable agriculture & farm mechanization in Northeast India.',
+    },
+    {
+      title: 'Heavy Passenger & Cargo EV',
+      category: 'ev',
+      src: './gallery/ELECTRIC 3-wheeler.webp',
+      caption: 'High-mileage electric 3-wheeler vehicle with low maintenance and fast charging capacity.',
+    },
   ];
 
   const filteredPhotos = activeCategory === 'all'
