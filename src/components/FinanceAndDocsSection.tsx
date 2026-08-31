@@ -95,14 +95,8 @@ export const FinanceAndDocsSection: React.FC<FinanceAndDocsSectionProps> = ({
               <div className="p-4 rounded-2xl bg-slate-900 border border-slate-800 mb-6">
                 <span className="text-[11px] font-semibold text-slate-400 block mb-3 uppercase tracking-wider">Banking Partners:</span>
                 <div className="flex flex-wrap items-center gap-3">
-                  <span className="px-3.5 py-1.5 rounded-xl bg-blue-950/80 border border-blue-800 text-blue-300 font-extrabold text-xs">
-                    SBI (State Bank of India)
-                  </span>
-                  <span className="px-3.5 py-1.5 rounded-xl bg-sky-950/80 border border-sky-800 text-sky-300 font-extrabold text-xs">
-                    HDFC BANK
-                  </span>
-                  <span className="px-3.5 py-1.5 rounded-xl bg-rose-950/80 border border-rose-800 text-rose-300 font-extrabold text-xs">
-                    IDFC FIRST Bank
+                  <span className="px-3.5 py-1.5 rounded-xl bg-emerald-950/80 border border-emerald-800 text-emerald-300 font-extrabold text-xs sm:text-sm">
+                    All government banks + HDFC
                   </span>
                 </div>
               </div>
