@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solar Price Catalog 2026 | Trishul Innovations - PM Surya Ghar Authorized Vendor</title>
+  <meta name="description" content="Official PM Surya Ghar Rooftop Solar Price Catalog & Subsidy List by Trishul Innovations. Standardized prices, subsidies up to ₹1,30,800, and Tier-1 components across Assam & NE India." />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              900: '#14532d',
+            },
+            solar: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- html2pdf for Direct Desktop PDF Download -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+  <style>
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 0;
+      }
+
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+        page-break-before: auto !important;
+        page-break-after: auto !important;
+        page-break-inside: auto !important;
+        break-before: auto !important;
+        break-after: auto !important;
+        break-inside: auto !important;
+        box-sizing: border-box !important;
+      }
+
+      /* Fix gradient text transparency bug in PDF engines */
+      .bg-clip-text, .text-transparent {
+        background: none !important;
+        -webkit-background-clip: unset !important;
+        background-clip: unset !important;
+        color: #f59e0b !important;
+        -webkit-text-fill-color: #f59e0b !important;
+      }
+
+      /* Hide decorative blurred background glows in print/PDF */
+      .blur-3xl, .blur-\[140px\], .blur-\[150px\], [class*="blur-"] {
+        display: none !important;
+      }
+
+      html, body {
+        background-color: #020617 !important;
+        color: #f8fafc !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        zoom: 60% !important;
+      }
+
+      .no-print {
+        display: none !important;
+      }
+
+      /* Force 3-column desktop grid for packages */
+      #catalog-grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 1rem !important;
+        width: 100% !important;
+      }
+
+      /* Force 7-column desktop grid for brand logos */
+      .grid-cols-2.sm\:grid-cols-4.lg\:grid-cols-7 {
+        display: grid !important;
+        grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
+        gap: 0.5rem !important;
+        width: 100% !important;
+      }
+
+      .glass-card {
+        background-color: #0f172a !important;
+        border: 1px solid #334155 !important;
+        color: #f8fafc !important;
+        box-shadow: none !important;
+      }
+
+      a {
+        text-decoration: none !important;
+      }
+    }
+    
+    .glass-panel {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .glass-card {
+      background: rgba(30, 41, 59, 0.6);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .glass-card:hover {
+      border-color: rgba(245, 158, 11, 0.4);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px -10px rgba(245, 158, 11, 0.15);
+    }
+
+    .badge-glow {
+      box-shadow: 0 0 15px rgba(245, 158, 11, 0.3);
+    }
+
+    .green-glow {
+      box-shadow: 0 0 15px rgba(34, 197, 94, 0.3);
+    }
+
+    /* Custom range slider styling */
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      background: #f59e0b;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(245, 158, 11, 0.8);
+      border: 2px solid #ffffff;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-slate-950 min-h-screen">
+
+  <!-- TOP BAR & CONTROLS -->
+  <header class="no-print sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center space-x-3">
+        <a href="index.html" class="flex items-center space-x-3 bg-white/95 px-3 py-1.5 rounded-xl border border-slate-200 shadow-md">
+          <img src="LOGO.webp" alt="Trishul Innovations Logo" class="h-8 sm:h-9 w-auto object-contain" />
+        </a>
+        <div class="h-6 w-px bg-slate-700 hidden sm:block"></div>
+        <span class="text-xs sm:text-sm font-semibold text-amber-400 flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-amber-400 animate-spin-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41m11.32-11.32l1.41-1.41"></path>
+          </svg>
+          SOLAR PRICE CATALOG 2026
+        </span>
+      </div>
+
+      <div class="flex items-center space-x-2 sm:space-x-3">
+        <button onclick="window.print()" class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 border border-slate-700 transition">
+          <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+          </svg>
+          <span>Print / Save PDF</span>
+        </button>
+        
+        <a href="https://wa.me/919181430285?text=Hi%20Trishul%20Innovations,%20I%20want%20the%20Official%20Solar%20Price%20Catalog%20and%20Govt%20Subsidy%20Estimate." target="_blank" class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-xs font-bold text-white transition shadow-lg shadow-emerald-900/30">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.705 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.149 4.204 4.305-1.139z"/>
+          </svg>
+          <span>Get Direct Quote</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO & CATALOG TITLE -->
+  <section class="relative py-12 px-4 sm:px-6 lg:px-8 border-b border-slate-800/80 overflow-hidden">
+    <!-- Glow backgrounds -->
+    <div class="absolute top-0 right-1/4 w-[500px] h-[300px] bg-amber-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute bottom-0 left-10 w-[400px] h-[300px] bg-emerald-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto text-center space-y-6 relative z-10">
+      
+      <!-- Badges row -->
+      <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs">
+        <span class="px-3 py-1 rounded-full bg-amber-950/80 text-amber-300 border border-amber-500/40 font-bold flex items-center gap-1.5 badge-glow">
+          ⚡ PM SURYA GHAR MUFT BIJLI YOJANA AUTHORIZED
+        </span>
+        <span class="px-3 py-1 rounded-full bg-blue-950/80 text-blue-300 border border-blue-500/40 font-semibold flex items-center gap-1.5">
+          🛡️ MNRE REGISTRATION APPROVED
+        </span>
+        <span class="px-3 py-1 rounded-full bg-emerald-950/80 text-emerald-300 border border-emerald-500/40 font-semibold flex items-center gap-1.5 green-glow">
+          🏢 APDCL EMPANELED VENDOR ASSAM
+        </span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white">
+        Solar System <span class="bg-gradient-to-r from-amber-400 via-amber-200 to-emerald-400 bg-clip-text text-transparent">Price & Subsidy Catalog</span>
+      </h1>
+      
+      <p class="max-w-3xl mx-auto text-slate-300 text-sm sm:text-base leading-relaxed">
+        Transparent, standardized rooftop solar system packages for Residential, Commercial & Industrial clients in Assam & Northeast India. Enjoy up to <strong class="text-amber-400">₹1,30,800 Total Direct Subsidy</strong> (Central + Assam State Subsidy) and save up to 90% on monthly electricity bills.
+      </p>
+
+
+
+    </div>
+  </section>
+
+
+
+  <!-- CATEGORY FILTER & PRICE CATALOG GRID -->
+  <section class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-8">
+    
+    <!-- Category Tabs -->
+    <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-4">
+      <div>
+        <h2 class="text-2xl font-bold text-white">Standardized Packages</h2>
+        <p class="text-slate-400 text-xs sm:text-sm">Select system category to view full specification & price breakdowns.</p>
+      </div>
+
+      <div class="no-print flex items-center space-x-2 bg-slate-900 p-1 rounded-xl border border-slate-800">
+        <button onclick="filterCategory('all')" id="tab-all" class="cat-tab px-4 py-2 rounded-lg text-xs font-bold transition bg-amber-500 text-slate-950">
+          All Tiers
+        </button>
+        <button onclick="filterCategory('residential')" id="tab-residential" class="cat-tab px-4 py-2 rounded-lg text-xs font-bold transition text-slate-300 hover:text-white">
+          Residential (PM Surya Ghar)
+        </button>
+        <button onclick="filterCategory('commercial')" id="tab-commercial" class="cat-tab px-4 py-2 rounded-lg text-xs font-bold transition text-slate-300 hover:text-white">
+          Commercial (15kW - 50kW)
+        </button>
+        <button onclick="filterCategory('hybrid')" id="tab-hybrid" class="cat-tab px-4 py-2 rounded-lg text-xs font-bold transition text-slate-300 hover:text-white">
+          Hybrid with Battery
+        </button>
+      </div>
+    </div>
+
+    <!-- CATALOG TIERS GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="catalog-grid">
+      
+      <!-- 1 kW PACKAGE -->
+      <div class="glass-card rounded-2xl p-6 flex flex-col justify-between print-card item-residential" data-kw="1">
+        <div class="space-y-4">
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 uppercase">
+                1.0 kW Rooftop System
+              </span>
+              <h3 class="text-xl font-bold text-white mt-1">Basic Residential Package</h3>
+            </div>
+            <div class="text-right">
+              <div class="text-xs text-slate-400 line-through">MRP ₹60,000</div>
+              <div class="text-2xl font-black text-amber-400">₹12,400</div>
+              <div class="text-[10px] text-emerald-400 font-semibold">Net Cost After Subsidy</div>
+            </div>
+          </div>
+
+          <p class="text-slate-300 text-xs leading-relaxed">
+            Ideal for small homes (1-2 BHK) powering basic lights, ceiling fans, TV, and Wi-Fi router.
+          </p>
+
+          <!-- Price & Subsidy Table -->
+          <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800 space-y-1.5 text-xs">
+            <div class="flex justify-between text-slate-300">
+              <span>Gross System Package Price:</span>
+              <span class="font-semibold text-white">₹60,000</span>
+            </div>
+            <div class="flex justify-between text-emerald-400">
+              <span>Central Subsidy (PM Surya Ghar):</span>
+              <span class="font-bold">₹30,000</span>
+            </div>
+            <div class="flex justify-between text-blue-400">
+              <span>Assam State Subsidy (APDCL):</span>
+              <span class="font-bold">₹17,600</span>
+            </div>
+            <div class="border-t border-slate-800 pt-1.5 flex justify-between font-bold text-white text-sm">
+              <span>Total Direct Subsidy:</span>
+              <span class="text-emerald-400">₹47,600</span>
+            </div>
+          </div>
+
+          <!-- Key Metrics -->
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Avg Monthly Gen:</strong> ~120 kWh / Units</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Est. Bill Savings:</strong> ~₹900 - ₹1,000 / month</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Solar Modules:</strong> 2x 550W TOPCon Bifacial Panels</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Inverter:</strong> 1kW On-Grid IP65 Inverter</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Govt Solar Loan EMI:</strong> ~₹350 / month</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="no-print pt-6 mt-6 border-t border-slate-800 flex items-center justify-between gap-3">
+          <a href="https://wa.me/919181430285?text=Hi%20Trishul%20Innovations,%20I%20want%20to%20apply%20for%20the%201%20kW%20Solar%20Package." target="_blank" class="w-full text-center py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition">
+            Apply Now
+          </a>
+        </div>
+      </div>
+
+      <!-- 2 kW PACKAGE -->
+      <div class="glass-card rounded-2xl p-6 flex flex-col justify-between print-card item-residential" data-kw="2">
+        <div class="space-y-4">
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 uppercase">
+                2.0 kW Rooftop System
+              </span>
+              <h3 class="text-xl font-bold text-white mt-1">Standard Home Package</h3>
+            </div>
+            <div class="text-right">
+              <div class="text-xs text-slate-400 line-through">MRP ₹1,15,000</div>
+              <div class="text-2xl font-black text-amber-400">₹19,800</div>
+              <div class="text-[10px] text-emerald-400 font-semibold">Net Cost After Subsidy</div>
+            </div>
+          </div>
+
+          <p class="text-slate-300 text-xs leading-relaxed">
+            Perfect for 2-3 BHK homes running refrigerator, washing machine, water pump, and lights/fans.
+          </p>
+
+          <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800 space-y-1.5 text-xs">
+            <div class="flex justify-between text-slate-300">
+              <span>Gross System Package Price:</span>
+              <span class="font-semibold text-white">₹1,15,000</span>
+            </div>
+            <div class="flex justify-between text-emerald-400">
+              <span>Central Subsidy (PM Surya Ghar):</span>
+              <span class="font-bold">₹60,000</span>
+            </div>
+            <div class="flex justify-between text-blue-400">
+              <span>Assam State Subsidy (APDCL):</span>
+              <span class="font-bold">₹35,200</span>
+            </div>
+            <div class="border-t border-slate-800 pt-1.5 flex justify-between font-bold text-white text-sm">
+              <span>Total Direct Subsidy:</span>
+              <span class="text-emerald-400">₹95,200</span>
+            </div>
+          </div>
+
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Avg Monthly Gen:</strong> ~240 kWh / Units</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Est. Bill Savings:</strong> ~₹1,800 - ₹2,000 / month</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Solar Modules:</strong> 4x 550W TOPCon Mono PERC</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Inverter:</strong> 2kW High-Efficiency Grid-Tied</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Govt Solar Loan EMI:</strong> ~₹550 / month</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="no-print pt-6 mt-6 border-t border-slate-800 flex items-center justify-between gap-3">
+          <a href="https://wa.me/919181430285?text=Hi%20Trishul%20Innovations,%20I%20want%20to%20apply%20for%20the%202%20kW%20Solar%20Package." target="_blank" class="w-full text-center py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition">
+            Apply Now
+          </a>
+        </div>
+      </div>
+
+      <!-- 3 kW PACKAGE (MOST POPULAR HIGHLIGHTED) -->
+      <div class="glass-card rounded-2xl p-6 flex flex-col justify-between print-card item-residential border-2 border-amber-500/80 relative" data-kw="3">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-gradient-to-r from-amber-500 to-emerald-500 text-slate-950 text-[11px] font-extrabold uppercase shadow-lg">
+          🔥 Most Popular Choice
+        </div>
+
+        <div class="space-y-4 pt-2">
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 uppercase">
+                3.0 kW Rooftop System
+              </span>
+              <h3 class="text-xl font-bold text-white mt-1">Maximum Subsidy Package</h3>
+            </div>
+            <div class="text-right">
+              <div class="text-xs text-slate-400 line-through">MRP ₹1,65,000</div>
+              <div class="text-3xl font-black text-amber-400">₹34,200</div>
+              <div class="text-[10px] text-emerald-400 font-semibold">Net Cost After Subsidy</div>
+            </div>
+          </div>
+
+          <p class="text-slate-300 text-xs leading-relaxed">
+            Powers entire 3-4 BHK household including 1.5 Ton AC, refrigerator, washing machine, and water pump. Maxes out maximum subsidy benefits.
+          </p>
+
+          <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800 space-y-1.5 text-xs">
+            <div class="flex justify-between text-slate-300">
+              <span>Gross System Package Price:</span>
+              <span class="font-semibold text-white">₹1,65,000</span>
+            </div>
+            <div class="flex justify-between text-emerald-400 font-medium">
+              <span>Central Subsidy (PM Surya Ghar):</span>
+              <span class="font-bold">₹78,000 (MAX)</span>
+            </div>
+            <div class="flex justify-between text-blue-400 font-medium">
+              <span>Assam State Subsidy (APDCL):</span>
+              <span class="font-bold">₹52,800 (MAX)</span>
+            </div>
+            <div class="border-t border-slate-800 pt-1.5 flex justify-between font-bold text-white text-sm">
+              <span>Total Direct Subsidy:</span>
+              <span class="text-emerald-400">₹1,30,800</span>
+            </div>
+          </div>
+
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Avg Monthly Gen:</strong> ~360 kWh / Units</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Est. Bill Savings:</strong> ~₹2,700 - ₹3,200 / month</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Solar Modules:</strong> 6x 550W TOPCon Bifacial Panels</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Inverter:</strong> 3kW Dual MPPT IP65 Inverter</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Govt Solar Loan EMI:</strong> ~₹950 / month</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="no-print pt-6 mt-6 border-t border-slate-800 flex items-center justify-between gap-3">
+          <a href="https://wa.me/919181430285?text=Hi%20Trishul%20Innovations,%20I%20want%20to%20apply%20for%20the%203%20kW%20Solar%20Package." target="_blank" class="w-full text-center py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition shadow-lg shadow-amber-500/20">
+            Apply Now (Max Subsidy)
+          </a>
+        </div>
+      </div>
+
+      <!-- 5 kW PACKAGE -->
+      <div class="glass-card rounded-2xl p-6 flex flex-col justify-between print-card item-residential" data-kw="5">
+        <div class="space-y-4">
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 uppercase">
+                5.0 kW Rooftop System
+              </span>
+              <h3 class="text-xl font-bold text-white mt-1">Premium Villa / Duplex</h3>
+            </div>
+            <div class="text-right">
+              <div class="text-xs text-slate-400 line-through">MRP ₹2,65,000</div>
+              <div class="text-2xl font-black text-amber-400">₹1,34,200</div>
+              <div class="text-[10px] text-emerald-400 font-semibold">Net Cost After Subsidy</div>
+            </div>
+          </div>
+
+          <p class="text-slate-300 text-xs leading-relaxed">
+            Designed for large homes running multiple Air Conditioners, induction cooktops, and heavy domestic loads.
+          </p>
+
+          <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800 space-y-1.5 text-xs">
+            <div class="flex justify-between text-slate-300">
+              <span>Gross System Package Price:</span>
+              <span class="font-semibold text-white">₹2,65,000</span>
+            </div>
+            <div class="flex justify-between text-emerald-400">
+              <span>Central Subsidy:</span>
+              <span class="font-bold">₹78,000</span>
+            </div>
+            <div class="flex justify-between text-blue-400">
+              <span>Assam State Subsidy:</span>
+              <span class="font-bold">₹52,800</span>
+            </div>
+            <div class="border-t border-slate-800 pt-1.5 flex justify-between font-bold text-white text-sm">
+              <span>Total Direct Subsidy:</span>
+              <span class="text-emerald-400">₹1,30,800</span>
+            </div>
+          </div>
+
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Avg Monthly Gen:</strong> ~600 kWh / Units</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Est. Bill Savings:</strong> ~₹4,500 - ₹5,000 / month</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Solar Modules:</strong> 10x 550W N-Type TOPCon Panels</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Inverter:</strong> 5kW 3-Phase / 1-Phase Smart Inverter</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="no-print pt-6 mt-6 border-t border-slate-800 flex items-center justify-between gap-3">
+          <a href="https://wa.me/919181430285?text=Hi%20Trishul%20Innovations,%20I%20want%20to%20apply%20for%20the%205%20kW%20Solar%20Package." target="_blank" class="w-full text-center py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition">
+            Apply Now
+          </a>
+        </div>
+      </div>
+
+      <!-- 10 kW PACKAGE -->
+      <div class="glass-card rounded-2xl p-6 flex flex-col justify-between print-card item-residential" data-kw="10">
+        <div class="space-y-4">
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30 uppercase">
+                10.0 kW System
+              </span>
+              <h3 class="text-xl font-bold text-white mt-1">Large Mansion & Small Business</h3>
+            </div>
+            <div class="text-right">
+              <div class="text-xs text-slate-400 line-through">MRP ₹5,10,000</div>
+              <div class="text-2xl font-black text-amber-400">₹3,79,200</div>
+              <div class="text-[10px] text-emerald-400 font-semibold">Net Cost After Subsidy</div>
+            </div>
+          </div>
+
+          <p class="text-slate-300 text-xs leading-relaxed">
+            High-output system suitable for luxury homes, multi-story buildings, clinics, schools, and offices.
+          </p>
+
+          <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800 space-y-1.5 text-xs">
+            <div class="flex justify-between text-slate-300">
+              <span>Gross System Package Price:</span>
+              <span class="font-semibold text-white">₹5,10,000</span>
+            </div>
+            <div class="flex justify-between text-emerald-400">
+              <span>Total Subsidies (Max Capped):</span>
+              <span class="font-bold">₹1,30,800</span>
+            </div>
+            <div class="border-t border-slate-800 pt-1.5 flex justify-between font-bold text-white text-sm">
+              <span>Net Investment:</span>
+              <span class="text-amber-400">₹3,79,200</span>
+            </div>
+          </div>
+
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Avg Monthly Gen:</strong> ~1,200 kWh / Units</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Est. Bill Savings:</strong> ~₹9,000 - ₹10,500 / month</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Solar Modules:</strong> 18x 550W Tier-1 Mono PERC</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Inverter:</strong> 10kW 3-Phase Grid Inverter</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="no-print pt-6 mt-6 border-t border-slate-800 flex items-center justify-between gap-3">
+          <a href="https://wa.me/919181430285?text=Hi%20Trishul%20Innovations,%20I%20want%20to%20apply%20for%20the%2010%20kW%20Solar%20Package." target="_blank" class="w-full text-center py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs transition">
+            Apply Now
+          </a>
+        </div>
+      </div>
+
+      <!-- COMMERCIAL 25 kW PACKAGE -->
+      <div class="glass-card rounded-2xl p-6 flex flex-col justify-between print-card item-commercial" data-kw="25">
+        <div class="space-y-4">
+          <div class="flex justify-between items-start">
+            <div>
+              <span class="px-2.5 py-0.5 rounded text-[10px] font-bold bg-blue-500/20 text-blue-300 border border-blue-500/30 uppercase">
+                25.0 kW Commercial
+              </span>
+              <h3 class="text-xl font-bold text-white mt-1">Industrial & Commercial</h3>
+            </div>
+            <div class="text-right">
+              <div class="text-2xl font-black text-amber-400">₹11,75,000</div>
+              <div class="text-[10px] text-blue-400 font-semibold">+ 40% Tax Depreciation Benefit</div>
+            </div>
+          </div>
+
+          <p class="text-slate-300 text-xs leading-relaxed">
+            Designed for commercial factories, hotels, tea estates, cold storages, and commercial complexes across Assam.
+          </p>
+
+          <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800 space-y-1.5 text-xs">
+            <div class="flex justify-between text-slate-300">
+              <span>Accelerated Tax Savings (40%):</span>
+              <span class="font-bold text-emerald-400">~ ₹1,40,000 Tax Benefit</span>
+            </div>
+            <div class="flex justify-between text-slate-300">
+              <span>Avg Monthly Generation:</span>
+              <span class="font-bold text-white">~3,000 kWh / Units</span>
+            </div>
+            <div class="border-t border-slate-800 pt-1.5 flex justify-between font-bold text-white text-sm">
+              <span>Estimated Payback Period:</span>
+              <span class="text-emerald-400">3.2 Years</span>
+            </div>
+          </div>
+
+          <ul class="space-y-2 text-xs text-slate-300">
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Solar Modules:</strong> 45x Tier-1 High-Efficiency Bifacial</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Inverter:</strong> 25kW Heavy-Duty Industrial Inverter</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-amber-400">✔</span>
+              <span><strong>Net Metering:</strong> HT/LT Commercial APDCL Approval</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="no-print pt-6 mt-6 border-t border-slate-800 flex items-center justify-between gap-3">
+          <a href="https://wa.me/919181430285?text=Hi%20Trishul%20Innovations,%20I%20am%20interested%20in%20a%2025kW%20Commercial%20Solar%20System." target="_blank" class="w-full text-center py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs transition">
+            Request Commercial Site Visit
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SPECIFICATIONS MATRIX & QUALITY COMPONENT STANDARDS -->
+  <section class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-8">
+    <div class="text-center max-w-3xl mx-auto space-y-3">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-white">BOM Specifications & Tier-1 Quality Standards</h2>
+      <p class="text-slate-400 text-xs sm:text-sm">Every Trishul Innovations installation uses strictly MNRE approved, top-tier international standard components.</p>
+    </div>
+
+    <!-- Specifications Table -->
+    <div class="bg-white rounded-2xl overflow-hidden border border-slate-300 shadow-xl print-card">
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs sm:text-sm text-slate-900">
+          <thead class="bg-slate-950 text-white uppercase font-extrabold border-b border-slate-300 text-[11px] tracking-wider">
+            <tr>
+              <th class="py-4 px-4 sm:px-6">Component Category</th>
+              <th class="py-4 px-4 sm:px-6">Brand / Make</th>
+              <th class="py-4 px-4 sm:px-6">Specification Details</th>
+              <th class="py-4 px-4 sm:px-6">Warranty & Lifespan</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 font-medium">
+            <tr class="hover:bg-slate-50 transition">
+              <td class="py-4 px-4 sm:px-6 font-black text-slate-950 flex items-center gap-2">
+                <span class="text-lg">☀️</span> <span>Solar PV Modules</span>
+              </td>
+              <td class="py-4 px-4 sm:px-6 font-extrabold text-slate-900">Waaree / Tata / Adani / Vikram</td>
+              <td class="py-4 px-4 sm:px-6 text-slate-800">
+                <strong class="text-slate-950 font-black">550Wp+ N-Type TOPCon / Mono PERC Bifacial</strong>, <strong class="text-emerald-700 font-bold">>22% Module Efficiency</strong>, IP68 Junction Box
+              </td>
+              <td class="py-4 px-4 sm:px-6 font-black text-emerald-700">12-Yr Product | 25-Yr Performance (84.8%)</td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition">
+              <td class="py-4 px-4 sm:px-6 font-black text-slate-950 flex items-center gap-2">
+                <span class="text-lg">⚡</span> <span>Solar Inverters</span>
+              </td>
+              <td class="py-4 px-4 sm:px-6 font-extrabold text-slate-900">Growatt / Solis / Sungrow / Microtek</td>
+              <td class="py-4 px-4 sm:px-6 text-slate-800">
+                <strong class="text-slate-950 font-black">Dual MPPT Grid-Tied / Hybrid Sinewave</strong>, <strong class="text-slate-950 font-bold">IP65 Outdoor Rated</strong>, Wi-Fi Remote Cloud Monitoring
+              </td>
+              <td class="py-4 px-4 sm:px-6 font-black text-emerald-700">10-Year Full Replacement Warranty</td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition">
+              <td class="py-4 px-4 sm:px-6 font-black text-slate-950 flex items-center gap-2">
+                <span class="text-lg">🏗️</span> <span>Mounting Structure</span>
+              </td>
+              <td class="py-4 px-4 sm:px-6 font-extrabold text-slate-900">HDGI / Anodized Aluminium</td>
+              <td class="py-4 px-4 sm:px-6 text-slate-800">
+                Hot-Dipped Galvanized Iron (80 Micron Coating), <strong class="text-slate-950 font-black">Engineered for 170 km/h Wind Resistance</strong>
+              </td>
+              <td class="py-4 px-4 sm:px-6 font-black text-emerald-700">25-Year Anti-Corrosion Guarantee</td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition">
+              <td class="py-4 px-4 sm:px-6 font-black text-slate-950 flex items-center gap-2">
+                <span class="text-lg">🛡️</span> <span>Protection & Safety</span>
+              </td>
+              <td class="py-4 px-4 sm:px-6 font-extrabold text-slate-900">Schneider / Havells / L&T</td>
+              <td class="py-4 px-4 sm:px-6 text-slate-800">
+                ACDB & DCDB Box with <strong class="text-slate-950 font-black">Type II Surge Protection (SPD)</strong>, MCB, Class-A Copper Lightning Arrester
+              </td>
+              <td class="py-4 px-4 sm:px-6 font-extrabold text-slate-900">5-Year Warranty</td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition">
+              <td class="py-4 px-4 sm:px-6 font-black text-slate-950 flex items-center gap-2">
+                <span class="text-lg">🔌</span> <span>Cables & Earthing</span>
+              </td>
+              <td class="py-4 px-4 sm:px-6 font-extrabold text-slate-900">Polycab / Finolex / Havells</td>
+              <td class="py-4 px-4 sm:px-6 text-slate-800">
+                UV-Resistant DC Solar Cables (4mm²/6mm²), <strong class="text-slate-950 font-black">3-Pit Maintenance-Free Chemical Earthing Rods</strong>
+              </td>
+              <td class="py-4 px-4 sm:px-6 font-extrabold text-slate-900">BIS Certified Standard</td>
+            </tr>
+            <tr class="hover:bg-slate-50 transition">
+              <td class="py-4 px-4 sm:px-6 font-black text-slate-950 flex items-center gap-2">
+                <span class="text-lg">📊</span> <span>Net-Metering & Documentation</span>
+              </td>
+              <td class="py-4 px-4 sm:px-6 font-extrabold text-slate-900">APDCL Approved Metering</td>
+              <td class="py-4 px-4 sm:px-6 text-slate-800">
+                <strong class="text-slate-950 font-black">End-to-end net-meter feasibility</strong>, sanction load approval, CEIG inspection, Subsidy Portal upload
+              </td>
+              <td class="py-4 px-4 sm:px-6 font-black text-emerald-700">Included in Package</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAND LOGOS SHOWCASE & AUTHORIZATIONS -->
+  <section class="py-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-slate-800/80 space-y-6">
+    <div class="text-center text-xs font-bold text-slate-400 uppercase tracking-widest">
+      Authorized Brand Partners & Equipment Manufacturers
+    </div>
+
+    <!-- Official Brand Logos Grid Showcase -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 sm:gap-4 items-stretch justify-center">
+      
+      <!-- Waaree Solar PV -->
+      <div class="bg-white/95 border border-slate-200 rounded-xl p-3.5 flex flex-col items-center justify-between space-y-2 text-center shadow-md hover:shadow-xl hover:scale-105 transition-all">
+        <div class="h-10 flex items-center justify-center">
+          <img src="logos/waaree.png" alt="Waaree Solar Logo" class="max-h-8 w-auto object-contain" />
+        </div>
+        <div class="border-t border-slate-100 pt-1.5 w-full">
+          <div class="text-[11px] font-extrabold text-slate-800 tracking-wide">WAAREE</div>
+          <div class="text-[10px] font-semibold text-amber-600">Solar PV</div>
+        </div>
+      </div>
+
+      <!-- Tata Power Solar Systems -->
+      <div class="bg-white/95 border border-slate-200 rounded-xl p-3.5 flex flex-col items-center justify-between space-y-2 text-center shadow-md hover:shadow-xl hover:scale-105 transition-all">
+        <div class="h-10 flex items-center justify-center">
+          <img src="logos/tata.svg" alt="Tata Power Solar Logo" class="max-h-8 w-auto object-contain" />
+        </div>
+        <div class="border-t border-slate-100 pt-1.5 w-full">
+          <div class="text-[11px] font-extrabold text-slate-800 tracking-wide">TATA POWER</div>
+          <div class="text-[10px] font-semibold text-blue-600">Solar Systems</div>
+        </div>
+      </div>
+
+      <!-- Adani Solar -->
+      <div class="bg-white/95 border border-slate-200 rounded-xl p-3.5 flex flex-col items-center justify-between space-y-2 text-center shadow-md hover:shadow-xl hover:scale-105 transition-all">
+        <div class="h-10 flex items-center justify-center">
+          <img src="logos/adani.svg" alt="Adani Solar Logo" class="max-h-8 w-auto object-contain" />
+        </div>
+        <div class="border-t border-slate-100 pt-1.5 w-full">
+          <div class="text-[11px] font-extrabold text-slate-800 tracking-wide">ADANI</div>
+          <div class="text-[10px] font-semibold text-emerald-600">Solar</div>
+        </div>
+      </div>
+
+      <!-- Vikram Solar Tier-1 Modules -->
+      <div class="bg-white/95 border border-slate-200 rounded-xl p-3.5 flex flex-col items-center justify-between space-y-2 text-center shadow-md hover:shadow-xl hover:scale-105 transition-all">
+        <div class="h-10 flex items-center justify-center">
+          <img src="logos/vikram.webp" alt="Vikram Solar Logo" class="max-h-8 w-auto object-contain" />
+        </div>
+        <div class="border-t border-slate-100 pt-1.5 w-full">
+          <div class="text-[11px] font-extrabold text-slate-800 tracking-wide">VIKRAM SOLAR</div>
+          <div class="text-[10px] font-semibold text-amber-600">Tier-1 Modules</div>
+        </div>
+      </div>
+
+      <!-- Growatt Inverters -->
+      <div class="bg-white/95 border border-slate-200 rounded-xl p-3.5 flex flex-col items-center justify-between space-y-2 text-center shadow-md hover:shadow-xl hover:scale-105 transition-all">
+        <div class="h-10 flex items-center justify-center">
+          <img src="logos/growatt.png" alt="Growatt Inverters Logo" class="max-h-8 w-auto object-contain" />
+        </div>
+        <div class="border-t border-slate-100 pt-1.5 w-full">
+          <div class="text-[11px] font-extrabold text-slate-800 tracking-wide">GROWATT</div>
+          <div class="text-[10px] font-semibold text-teal-600">Inverters</div>
+        </div>
+      </div>
+
+      <!-- Solis Smart Power -->
+      <div class="bg-white/95 border border-slate-200 rounded-xl p-3.5 flex flex-col items-center justify-between space-y-2 text-center shadow-md hover:shadow-xl hover:scale-105 transition-all">
+        <div class="h-10 flex items-center justify-center">
+          <img src="logos/solis.svg" alt="Solis Smart Power Logo" class="max-h-8 w-auto object-contain" />
+        </div>
+        <div class="border-t border-slate-100 pt-1.5 w-full">
+          <div class="text-[11px] font-extrabold text-slate-800 tracking-wide">SOLIS</div>
+          <div class="text-[10px] font-semibold text-orange-600">Smart Power</div>
+        </div>
+      </div>
+
+      <!-- Havells Solar Solutions -->
+      <div class="bg-white/95 border border-slate-200 rounded-xl p-3.5 flex flex-col items-center justify-between space-y-2 text-center shadow-md hover:shadow-xl hover:scale-105 transition-all">
+        <div class="h-10 flex items-center justify-center">
+          <img src="logos/havells.svg" alt="Havells Solar Logo" class="max-h-8 w-auto object-contain" />
+        </div>
+        <div class="border-t border-slate-100 pt-1.5 w-full">
+          <div class="text-[11px] font-extrabold text-slate-800 tracking-wide">HAVELLS</div>
+          <div class="text-[10px] font-semibold text-red-600">Solar Solutions</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER & OFFICIAL CONTACT INFO -->
+  <footer class="bg-slate-950 border-t border-slate-800 py-12 px-4 sm:px-6 lg:px-8 print-exact">
+    <div class="max-w-7xl mx-auto space-y-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+        
+        <!-- Brand & Badges -->
+        <div class="space-y-3">
+          <div class="flex items-center space-x-2">
+            <span class="font-black text-xl text-white tracking-tight">TRISHUL INNOVATIONS</span>
+            <span class="px-2.5 py-0.5 rounded text-[10px] font-extrabold bg-amber-500/20 text-amber-300 border border-amber-500/40 uppercase">
+              Govt Empaneled Vendor
+            </span>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed max-w-sm">
+            Empowering Assam & Northeast India with PM Surya Ghar Rooftop Solar, EV Charging Infrastructure, and Commercial Green Energy Solutions.
+          </p>
+          <div class="text-xs text-amber-400 font-semibold flex items-center gap-1.5">
+            ⚡ MNRE Registered & APDCL Empaneled Solar Rooftop Vendor
+          </div>
+        </div>
+
+        <!-- Headquarters & Contact Details -->
+        <div class="space-y-2 text-xs text-slate-300">
+          <div class="font-extrabold text-white text-sm tracking-wide uppercase border-b border-slate-800 pb-1">Headquarters & Contact</div>
+          <div><strong class="text-white">Headquarters:</strong> House no -5 ,Naamghar Path,Sorumotoria,Guwahati,781006</div>
+          <div><strong class="text-white">Phone Lines:</strong> +91 9181430285 (WhatsApp) | 0361-7265223</div>
+          <div><strong class="text-white">Email:</strong> trishul.innovations@outlook.com</div>
+        </div>
+
+        <!-- Official Web Portal & Regional Network -->
+        <div class="space-y-2 text-xs text-slate-300">
+          <div class="font-extrabold text-white text-sm tracking-wide uppercase border-b border-slate-800 pb-1">Web Portal & Network</div>
+          <div><strong class="text-white">Official Website:</strong> <a href="https://www.trishul.tech" target="_blank" class="text-amber-400 font-extrabold hover:underline">www.trishul.tech</a></div>
+          <div><strong class="text-white">Regional Depots:</strong> Guwahati • Jorhat • Dibrugarh • Silchar • Tezpur • Bongaigaon • Tinsukia</div>
+          <div><strong class="text-white">Coverage:</strong> All 35 Districts of Assam & NE India</div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center text-slate-400 text-xs gap-3">
+        <div>© 2026 Trishul Innovations. All Rights Reserved. PM Surya Ghar Muft Bijli Yojana Partner.</div>
+        <div>Portal: <a href="https://www.trishul.tech" target="_blank" class="text-amber-400 font-bold hover:underline">www.trishul.tech</a></div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- SCRIPT FOR INTERACTIVE CALCULATOR & FILTERS -->
+  <script>
+    function updateCalculator(val) {
+      const kw = parseFloat(val);
+      document.getElementById('slider-kw-label').innerText = kw.toFixed(1) + ' kW';
+      
+      // Calculate units and roof space
+      const units = Math.round(kw * 120);
+      const space = Math.round(kw * 100);
+      document.getElementById('calc-units').innerText = '~' + units + ' Units / Month';
+      document.getElementById('calc-space').innerText = '~' + space + ' Sq. Ft.';
+
+      // Cost calculation
+      let gross = Math.round(kw * 55000);
+      if (kw <= 1) gross = 60000;
+      else if (kw <= 2) gross = 115000;
+      else if (kw <= 3) gross = 165000;
+
+      // Central subsidy
+      let central = 0;
+      if (kw <= 1) central = 30000;
+      else if (kw <= 2) central = 60000;
+      else central = 78000;
+
+      // Assam State subsidy (APDCL)
+      let state = Math.min(kw * 17600, 52800);
+      let totalSubsidy = central + state;
+      let net = Math.max(gross - totalSubsidy, 10000);
+
+      // Low interest EMI est.
+      let emi = Math.round(net / 36);
+
+      document.getElementById('calc-gross').innerText = '₹' + gross.toLocaleString('en-IN');
+      document.getElementById('calc-central').innerText = '- ₹' + central.toLocaleString('en-IN');
+      document.getElementById('calc-state').innerText = '- ₹' + state.toLocaleString('en-IN');
+      document.getElementById('calc-net').innerText = '₹' + net.toLocaleString('en-IN');
+      document.getElementById('calc-emi').innerText = '~ ₹' + emi.toLocaleString('en-IN') + ' / month';
+
+      const waText = encodeURIComponent(`Hi Trishul Innovations, I want to apply for a ${kw.toFixed(1)} kW Solar Rooftop System under PM Surya Ghar. Estimated Net Price: ₹${net.toLocaleString('en-IN')}. Please contact me.`);
+      document.getElementById('calc-whatsapp-btn').href = 'https://wa.me/919181430285?text=' + waText;
+    }
+
+    function filterCategory(cat) {
+      document.querySelectorAll('.cat-tab').forEach(b => {
+        b.classList.remove('bg-amber-500', 'text-slate-950');
+        b.classList.add('text-slate-300');
+      });
+      document.getElementById('tab-' + cat).classList.add('bg-amber-500', 'text-slate-950');
+      document.getElementById('tab-' + cat).classList.remove('text-slate-300');
+
+      const items = document.querySelectorAll('#catalog-grid > div');
+      items.forEach(item => {
+        if (cat === 'all') {
+          item.style.display = 'flex';
+        } else if (cat === 'residential') {
+          item.style.display = item.classList.contains('item-residential') ? 'flex' : 'none';
+        } else if (cat === 'commercial') {
+          item.style.display = item.classList.contains('item-commercial') ? 'flex' : 'none';
+        } else if (cat === 'hybrid') {
+          item.style.display = item.classList.contains('item-hybrid') ? 'flex' : 'none';
+        }
+      });
+    }
+
+    // Initialize calculator
+    updateCalculator(3);
+  </script>
+</body>
+</html>

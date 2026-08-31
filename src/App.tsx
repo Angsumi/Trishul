@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { ValueBadges } from './components/ValueBadges';
 import { SolarSavingsCalculator } from './components/SolarSavingsCalculator';
+import { SolarPriceCatalog } from './components/SolarPriceCatalog';
 import { EVSavingsCalculator } from './components/EVSavingsCalculator';
 import { SolutionsSection } from './components/SolutionsSection';
 import { DealershipSection } from './components/DealershipSection';
@@ -81,6 +82,9 @@ export function App() {
 
         {/* PM Surya Ghar Solar Calculator */}
         <SolarSavingsCalculator onApplyForSystem={handleApplyForCalculatedSystem} />
+
+        {/* Solar Price Catalog & Subsidy List */}
+        <SolarPriceCatalog onApplyForSystem={handleApplyForCalculatedSystem} />
 
         {/* EV Savings Calculator */}
         <EVSavingsCalculator onExploreEV={(veh) => handleOpenContact(veh)} />

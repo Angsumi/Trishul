@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, Mail, MapPin, Menu, X, ArrowRight, ShieldCheck, Sun, Zap, Bike, Calculator, FileText, ChevronRight } from 'lucide-react';
+import { Phone, Mail, MapPin, Menu, X, ArrowRight, ShieldCheck, Sun, Zap, Bike, Calculator, FileText, ChevronRight, Globe } from 'lucide-react';
 import { motion } from 'motion/react';
 import logoImg from '../assets/LOGO.webp';
 
@@ -28,6 +28,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onOpenCalculator 
     { name: 'Home', href: '#hero' },
     { name: 'About Us', href: '#about' },
     { name: 'PM Surya Ghar', href: '#surya-ghar' },
+    { name: 'Price Catalog', href: '#price-catalog' },
     { name: 'Solar Solutions', href: '#solutions' },
     { name: 'EV Solutions', href: '#ev-solutions' },
     { name: 'EV Dealership', href: '#dealership' },
@@ -55,6 +56,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact, onOpenCalculator 
             <a href="mailto:trishul.innovations@outlook.com" className="flex items-center space-x-1.5 hover:text-amber-400 transition-colors">
               <Mail className="w-3.5 h-3.5 text-blue-400" />
               <span>trishul.innovations@outlook.com</span>
+            </a>
+            <a href="https://www.trishul.tech" target="_blank" rel="noopener noreferrer" className="hidden xl:flex items-center space-x-1.5 hover:text-amber-400 transition-colors">
+              <Globe className="w-3.5 h-3.5 text-amber-400" />
+              <span>www.trishul.tech</span>
             </a>
           </div>
 
